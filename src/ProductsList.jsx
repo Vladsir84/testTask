@@ -57,7 +57,7 @@ const ProductsList = () => {
 						const productIndex = products.findIndex((product) => {
 							return product.id === productID;
 						});
-						let { name, id, price, photo } = products[productIndex];
+						let { name, id, price } = products[productIndex];
 						return (
 							<Card title={name} key={id}>
 								<p>{price}</p>
