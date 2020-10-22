@@ -29,8 +29,7 @@ const ProductsList = () => {
 					return (
 						<Card title={name} key={id}>
 							<p>{price}</p>
-							<p>{photo}</p>
-							{!haveInCart ? (
+								{!haveInCart ? (
 								<Button
 									onClick={() => handleAddProductToCart(id)}
 									type='primary'
