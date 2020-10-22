@@ -5,15 +5,15 @@ import ProductsList from './ProductsList';
 const App = () => {
 
     return (
-            <div className="page">
-              
-                <main className="content">
-                    <ProductsList  />
-                  
-                </main>
-            </div>
-        );
-    };
+        <div className="page">
+
+            <main className="content">
+                <ProductsList />
+
+            </main>
+        </div>
+    );
+};
 
 
 export default App;
