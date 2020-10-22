@@ -38,14 +38,14 @@ const ProductsList = () => {
 									Add to shopping cart
 								</Button>
 							) : (
-								<Button
-									onClick={() => handleRemoveFromCart(id)}
-									type='primary'
-									danger
-								>
-									Remove from shopping cart
-								</Button>
-							)}
+									<Button
+										onClick={() => handleRemoveFromCart(id)}
+										type='primary'
+										danger
+									>
+										Remove from shopping cart
+									</Button>
+								)}
 						</Card>
 					);
 				})}
@@ -54,16 +54,16 @@ const ProductsList = () => {
 				<h1>Your shopping cart</h1>
 				{cartProducts.length > 0
 					? cartProducts.map((productID) => {
-							const productIndex = products.findIndex((product) => {
-								return product.id === productID;
-							});
-							let { name, id, price, photo } = products[productIndex];
-							return (
-								<Card title={name} key={id}>
-									<p>{price}</p>
-								</Card>
-							);
-					  })
+						const productIndex = products.findIndex((product) => {
+							return product.id === productID;
+						});
+						let { name, id, price, photo } = products[productIndex];
+						return (
+							<Card title={name} key={id}>
+								<p>{price}</p>
+							</Card>
+						);
+					})
 					: "Your shopping cart is empty."}
 			</div>
 		</>
